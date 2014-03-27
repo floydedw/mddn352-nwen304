@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<title>Page Title</title>
@@ -55,15 +55,13 @@ $(document).bind('pageinit', function() {
 	}, 'json');
   });
   $( "#button2" ).bind( "click", function(event, ui) {
-  	alert("Posting a new quote");
-  	var jsonUrl = "http://localhost:3001/quote";
-  	var newQuote = { "author" : "foo", "text" : "some text" };
-  	$.post(jsonUrl,newQuote, function(data) {
-    	alert("Added " + data.author + " " + data.text);
-  	}, 'json');
-    });
-  
-
+ 	alert("Posting a new quote");
+ 	var jsonUrl = "http://localhost:3001/quote";
+ 	var newQuote = { "author" : "foo", "text" : "some text" };
+ 	$.post(jsonUrl,newQuote, function(data) {
+   	alert("Added " + data.author + " " + data.text);
+ 	}, 'json');
+   });
 });
 </script>
 </body>
